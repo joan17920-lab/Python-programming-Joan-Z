@@ -17,5 +17,5 @@ För att köra programmet behöver följande filer finnas i samma mapp och kör 
 
 >  **Obs**: Du behöver justera sökvägarna (path) till filerna i koden.
 
-```unlabelled = np.loadtxt("../path/unlabelled_data.csv", delimiter=",")
-np.savetxt("../path/labelled_data.csv",labeled, delimiter=",", fmt=["%.16f", "%.16f", "%d"])```
+```unlabelled = np.loadtxt("../path/unlabelled_data.csv", delimiter=",")```
+```np.savetxt("../path/labelled_data.csv",labeled, delimiter=",", fmt=["%.16f", "%.16f", "%d"])```
