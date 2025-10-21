@@ -1,8 +1,21 @@
-Denna programm kommer att klassifiera punkterna enligt linjer, de som ligger till vänster/under labelleras till 0, högre/ovan till 1 och en ny csv fil skapas som innehåller data och label. Programmen visar ochså en graf med klassiferade punter och linjer.
+### README
+Detta program klassificerar datapunkter i förhållande till givna linjer.
+Punkter som ligger till **vänster eller under** linjen får etiketten **0**, medan punkter **ovanför eller till höger** får etiketten **1**.
+Ett nytt CSV-dokument skapas som innehåller både de ursprungliga datapunkterna och deras tilldelade etiketter.
 
-För att använda program behöver classified.py, Labb3.py och unlabelled_data.csv laddas ner i en map, sedan kör Labb3.py.
+Programmet visar även en grafisk visualisering där datapunkterna och klassificeringslinjerna ritas ut.
 
- __obs:__ du behöver justera path till fil. 
+### Användning
 
- - unlabelled = np.loadtxt("../Python-programming-Joan-Z/Labs/Labb3/unlabelled_data.csv", delimiter=",")
- - np.savetxt("../Python-programming-Joan-Z/Labs/Labb3/labelled_data.csv",labeled, delimiter=",", fmt=["%.16f", "%.16f", "%d"])
+För att köra programmet behöver följande filer finnas i samma mapp och kör därefter filen Labb3.py.:
+| Filnamn | Beskrivning |
+|----------|--------------|
+| classified.py | Klassificeringsfunktion |
+| Labb3.py | Huvudprogram |
+| unlabelled_data.csv | Ursprunglig data |
+
+
+> **Obs**: Du behöver justera sökvägarna (path) till filerna i koden.
+
+"""unlabelled = np.loadtxt("../path/unlabelled_data.csv", delimiter=",")
+np.savetxt("../path/labelled_data.csv",labeled, delimiter=",", fmt=["%.16f", "%.16f", "%d"])"""
